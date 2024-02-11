@@ -1,0 +1,12 @@
+.footer_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+}
+
+.footer_container {
+  width: 100%;
+}

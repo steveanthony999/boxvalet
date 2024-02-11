@@ -1,0 +1,12 @@
+.benefits_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-chocolate);
+}
+
+.benefits_container {
+  width: 100%;
+}

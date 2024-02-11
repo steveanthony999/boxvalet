@@ -1,10 +1,19 @@
+import Hero from '@/components/landingpage/hero/Hero';
+import Overview from '@/components/landingpage/overview/Overview';
+import Benefits from '@/components/landingpage/benefits/Benefits';
+import CallToAction from '@/components/landingpage/calltoaction/CallToAction';
+import Testimonials from '@/components/landingpage/testimonials/Testimonials';
+import Footer from '@/components/footer/Footer';
+
 export default function Home() {
   return (
     <main className='main'>
-      <div className='container'>
-        <h1>BoxValet</h1>
-        <h3>Site Coming Soon...</h3>
-      </div>
+      <Hero />
+      <Overview />
+      <Benefits />
+      <CallToAction />
+      <Testimonials />
+      <Footer />
     </main>
   );
 }

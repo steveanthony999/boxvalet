@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
 
 :root {
-  --text-black: #1d1c1e;
+  --black: #1d1c1e;
+  --white: #ffffff;
+  --pale-grey-blue: #f1f3f5;
+  --dark-chocolate: #532500;
 }
 
 * {
@@ -32,5 +35,9 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--text-black);
+  color: var(--black);
+}
+
+.text_white {
+  color: var(--white);
 }
