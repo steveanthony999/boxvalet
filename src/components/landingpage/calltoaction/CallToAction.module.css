@@ -8,4 +8,29 @@
 
 .calltoaction_container {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bottom {
+  min-width: 923px;
+  padding: 43px 48px;
+  background: var(--red-orange);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: -2rem;
+  z-index: -1;
 }

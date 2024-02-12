@@ -15,7 +15,7 @@ export default function Overview() {
         />
       ),
       cardHeader: 'We Bring You Boxes',
-      cardParagraph: 'Or whatever other storage containers you&apos;ll need.',
+      cardParagraph: "Or whatever other storage containers you'll need.",
     },
     {
       cardImage: (
@@ -28,7 +28,7 @@ export default function Overview() {
         />
       ),
       cardHeader: 'We Pick Up When Ready',
-      cardParagraph: 'We&apos;ll provide an itemized invoice.',
+      cardParagraph: "We'll provide an itemized invoice.",
     },
     {
       cardImage: (
@@ -48,8 +48,8 @@ export default function Overview() {
         <Image
           src='/hand.png'
           alt='Isometric Storage Room'
-          width={64}
-          height={64}
+          width={84}
+          height={84}
           priority
         />
       ),
@@ -59,18 +59,22 @@ export default function Overview() {
   ];
 
   return (
-    <section id='Overview' className={styles.overview_main}>
+    <section id='Overview' className={`${styles.overview_main} padding_tb_121`}>
       <div className='container'>
         <div className={styles.overview_container}>
-          <h2>Sit Back. Relax. We’ll Handle It.</h2>
-          {cardsData.map((card, index) => (
-            <Card
-              key={index}
-              cardImage={card.cardImage}
-              cardHeader={card.cardHeader}
-              cardParagraph={card.cardParagraph}
-            />
-          ))}
+          <h2 className='heading_secondary text_center'>
+            Sit Back. Relax. We&apos;ll Handle It.
+          </h2>
+          <div className={`${styles.card_container} margin_t_51`}>
+            {cardsData.map((card, index) => (
+              <Card
+                key={index}
+                cardImage={card.cardImage}
+                cardHeader={card.cardHeader}
+                cardParagraph={card.cardParagraph}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
