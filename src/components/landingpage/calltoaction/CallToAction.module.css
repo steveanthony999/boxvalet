@@ -13,6 +13,11 @@
   justify-content: space-between;
 }
 
+.left img {
+  position: relative;
+  z-index: 1;
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -32,5 +37,39 @@
   position: absolute;
   right: 0;
   bottom: -2rem;
-  z-index: -1;
+}
+
+.bottom form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.bottom form input[type='email'] {
+  width: 380px;
+  padding: 1rem;
+  color: var(--white);
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+}
+
+.bottom form input[type='email']::placeholder {
+  color: var(--white);
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.bottom form button {
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom form input[type='email']:focus,
+.bottom form button:focus {
+  outline: none;
 }

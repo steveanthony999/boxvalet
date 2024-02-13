@@ -1,7 +1,24 @@
+'use client';
+
+import { useState, FormEvent, ChangeEvent } from 'react';
 import Image from 'next/image';
 import styles from './CallToAction.module.css';
 
 export default function CallToAction() {
+  const [email, setEmail] = useState<string>('');
+
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) =>
+    setEmail(e.target.value);
+
+  const handleEmailSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    // Send email
+    console.log(email);
+
+    setEmail('');
+  };
+
   return (
     <section
       id='CallToAction'
@@ -44,9 +61,22 @@ export default function CallToAction() {
               <p className='heading_tertiary text_white'>
                 GET MORE INFO IN YOUR INBOX
               </p>
-              <form className='margin_t_25'>
-                <input type='email' />
-                <input type='submit' />
+              <form className='margin_t_25' onSubmit={handleEmailSubmit}>
+                <input
+                  type='email'
+                  value={email}
+                  placeholder='Email Address'
+                  onChange={handleEmailChange}
+                />
+                <button type='submit'>
+                  <Image
+                    src='/arrow.svg'
+                    alt='Arrow'
+                    width={30}
+                    height={30}
+                    priority
+                  />
+                </button>
               </form>
             </div>
           </div>
