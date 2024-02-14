@@ -47,33 +47,36 @@ export default function Testimonials() {
   }, [emblaApi, onInit, onSelect]);
 
   return (
-    <section id='Testimonials' className={styles.testimonials_main}>
+    <section
+      id='Testimonials'
+      className={`${styles.testimonials_main} padding_tb_121`}
+    >
       <div className='container'>
         <div className={styles.testimonials_container}>
+          <Image src='/quote.svg' alt='Quote' width={58} height={58} priority />
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
               {testimonials.map((testimonial, index) => (
                 <div className={styles.embla__slide} key={index}>
+                  <h3 className='margin_t_36 heading_secondary'>
+                    {testimonial.headerQuote}
+                  </h3>
+                  <p className='margin_t_28'>{testimonial.testimonialText}</p>
                   <Image
                     src={testimonial.avatarImage}
                     alt={testimonial.reviewerName}
                     width={64}
                     height={64}
+                    className='margin_t_36 avatar_img'
                     priority
                   />
-                  <h3>{testimonial.headerQuote}</h3>
-                  <p>{testimonial.testimonialText}</p>
                   <p>{testimonial.reviewerName}</p>
                 </div>
               ))}
             </div>
           </div>
-          <div className={styles.dots_container}>
-            <div className={styles.embla__buttons}>
-              <PrevButton onClick={scrollPrev} />
-              <NextButton onClick={scrollNext} />
-            </div>
-
+          <div className={`${styles.arrows_and_dots_container} margin_t_36`}>
+            <PrevButton onClick={scrollPrev} />
             <div className={styles.embla__dots}>
               {scrollSnaps.map((_, index) => (
                 <DotButton
@@ -82,9 +85,13 @@ export default function Testimonials() {
                   className={styles.embla__dot.concat(
                     index === selectedIndex ? styles.embla__dot__selected : ''
                   )}
+                  style={{
+                    border: 'none',
+                  }}
                 />
               ))}
             </div>
+            <NextButton onClick={scrollNext} />
           </div>
         </div>
       </div>

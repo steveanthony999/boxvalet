@@ -13,7 +13,7 @@ export default function CallToAction() {
   const handleEmailSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    // Send email
+    // TODO: Send email
     console.log(email);
 
     setEmail('');

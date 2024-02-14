@@ -94,8 +94,16 @@ a {
   margin-top: 25px;
 }
 
+.margin_t_28 {
+  margin-top: 28px;
+}
+
 .margin_t_31 {
   margin-top: 31px;
+}
+
+.margin_t_36 {
+  margin-top: 36px;
 }
 
 .margin_t_51 {
@@ -121,4 +129,8 @@ a {
 .button_secondary {
   color: var(--black);
   background: transparent;
+}
+
+.avatar_img {
+  border-radius: 50%;
 }
