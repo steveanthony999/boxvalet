@@ -82,11 +82,14 @@ export default function Testimonials() {
                 <DotButton
                   key={index}
                   onClick={() => scrollTo(index)}
-                  className={styles.embla__dot.concat(
-                    index === selectedIndex ? styles.embla__dot__selected : ''
+                  className={styles.dot.concat(
+                    index === selectedIndex ? '_selected' : ''
                   )}
                   style={{
                     border: 'none',
+                    transform:
+                      index === selectedIndex ? 'scale(3, 1.2)' : 'scale(1, 1)',
+                    transition: '0.4s',
                   }}
                 />
               ))}

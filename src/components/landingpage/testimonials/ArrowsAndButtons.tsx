@@ -13,7 +13,7 @@ export const DotButton: React.FC<PropType> = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    <button className={styles.dot_button} type='button' {...restProps}>
+    <button type='button' {...restProps}>
       <Image src={'/dot.svg'} alt={'dot'} width={10} height={10} priority />
       {children}
     </button>

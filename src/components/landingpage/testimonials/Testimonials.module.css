@@ -88,3 +88,11 @@
   height: 0.3rem;
   content: '';
 } */
+
+.dot {
+  opacity: 1;
+}
+
+.dot_selected {
+  opacity: 0.5;
+}
