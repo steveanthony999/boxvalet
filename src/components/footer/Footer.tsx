@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
         <p className='text_center margin_t_25'>
-          Copyright 2024 BoxValet. All Rights Reserved
+          Copyright &copy; 2024 BoxValet. All Rights Reserved
         </p>
       </div>
     </footer>
