@@ -14,23 +14,27 @@ export const testimonials: Testimonial[] = [
     reviewerName: 'Cole Kent',
   },
   {
-    headerQuote: 'Highly recommended',
-    testimonialText: 'Pellentesque in ipsum id orci porta dapibus...',
-    avatarImage: '/avatar2.jpeg',
-    reviewerName: 'Jane Smith',
-  },
-  {
-    headerQuote: 'Will use again',
+    headerQuote: 'They have a customer for life!',
     testimonialText:
-      'Curabitur non nulla sit amet nisl tempus convallis quis ac lectus...',
-    avatarImage: '/avatar3.jpeg',
-    reviewerName: 'Emily Johnson',
+      'Box Valet revolutionized the way I handle excess belongings. The convenience of having just the right amount of storage, picked up and delivered right to my doorstep, is unparalleled. Their attention to detail and exceptional customer service means I never worry about my items. Highly efficient and utterly reliable – they have a customer for life!',
+    avatarImage: '/avatar2.jpeg',
+    reviewerName: 'Jane Dennison',
   },
   {
-    headerQuote: 'Exceptional quality',
-    testimonialText: 'Sed porttitor lectus nibh...',
+    headerQuote:
+      'They catered to my trade-show business storage needs without the hassle of a traditional storage unit.',
+    testimonialText:
+      "I can't praise Box Valet enough for their impeccable service. They catered to my trade-show business storage needs without the hassle of a traditional storage unit. The personalized packing list for each box was a thoughtful touch, and accessing my items was just a request away. The efficiency and care they provide have made storage and retrieval a breeze. They've earned my highest recommendation!",
+    avatarImage: '/avatar3.jpeg',
+    reviewerName: 'Emily Wood',
+  },
+  {
+    headerQuote:
+      'Their inventory system made it a breeze to keep track of my things.',
+    testimonialText:
+      "What a game-changer! Box Valet provided the perfect solution for my temporary storage needs. Their process is seamless – from drop-off to pick-up. Every item returned in pristine condition, and their inventory system made it a breeze to keep track of my things. Simple, straightforward, and stress-free. I'm thoroughly impressed!",
     avatarImage: '/avatar4.jpeg',
-    reviewerName: 'Michael Brown',
+    reviewerName: 'Big Mike Bridger',
   },
 ];
 

@@ -78,7 +78,7 @@ export default function Testimonials() {
                     className='margin_t_36 avatar_img'
                     priority
                   />
-                  <p>{testimonial.reviewerName}</p>
+                  <p className='margin_t_6'>{testimonial.reviewerName}</p>
                 </div>
               ))}
             </div>
