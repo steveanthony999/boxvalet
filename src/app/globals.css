@@ -42,6 +42,10 @@ a {
   color: var(--black);
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .text_white {
   color: var(--white);
 }
@@ -88,6 +92,10 @@ a {
 
 .padding_tb_121 {
   padding: 121px 0;
+}
+
+.margin_t_6 {
+  margin-top: 6px;
 }
 
 .margin_t_25 {

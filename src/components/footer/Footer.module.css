@@ -3,10 +3,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--black);
+  padding-bottom: 1rem;
 }
 
 .footer_container {
   width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.left {
+  max-width: 365px;
 }
