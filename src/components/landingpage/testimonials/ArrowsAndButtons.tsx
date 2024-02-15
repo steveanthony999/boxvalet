@@ -14,7 +14,7 @@ export const DotButton: React.FC<PropType> = (props) => {
 
   return (
     <button type='button' {...restProps}>
-      <Image src={'/dot.svg'} alt={'dot'} width={10} height={10} priority />
+      <Image src={'/dotrect.svg'} alt={'dot'} width={10} height={10} priority />
       {children}
     </button>
   );

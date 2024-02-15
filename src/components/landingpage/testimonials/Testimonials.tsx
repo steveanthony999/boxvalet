@@ -51,6 +51,14 @@ export default function Testimonials() {
       id='Testimonials'
       className={`${styles.testimonials_main} padding_tb_121`}
     >
+      <Image
+        src='/dolly.svg'
+        className={styles.dolly_image}
+        alt='Dolly'
+        width={324}
+        height={459}
+        priority
+      />
       <div className='container'>
         <div className={styles.testimonials_container}>
           <Image src='/quote.svg' alt='Quote' width={58} height={58} priority />
@@ -88,8 +96,8 @@ export default function Testimonials() {
                   style={{
                     border: 'none',
                     transform:
-                      index === selectedIndex ? 'scale(3, 1.2)' : 'scale(1, 1)',
-                    transition: '0.4s',
+                      index === selectedIndex ? 'scale(3, 1)' : 'scale(1, 1)',
+                    transition: '0.4s ease-out',
                   }}
                 />
               ))}
