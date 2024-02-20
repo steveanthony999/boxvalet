@@ -107,3 +107,38 @@
 .dot_selected {
   opacity: 0.5;
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .testimonials_main {
+    padding: 39px 24px;
+    background: var(--white);
+  }
+
+  .quote_img {
+    width: 36px;
+    height: 36px;
+    margin-top: -2rem;
+  }
+
+  .testimonials_container h3 {
+    margin-top: 0;
+  }
+
+  .testimonials_container p {
+    text-align: justify;
+  }
+
+  .dolly_image {
+    display: none;
+  }
+
+  .embla {
+    max-width: 90%;
+    padding: 2rem 0;
+  }
+
+  .arrows_and_dots_container {
+    margin-top: 0;
+  }
+}

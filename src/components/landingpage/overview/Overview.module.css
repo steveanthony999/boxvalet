@@ -16,3 +16,18 @@
   align-items: center;
   justify-content: space-between;
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .overview_main {
+    padding-bottom: 0;
+  }
+
+  .overview_container {
+    padding: 0 31px;
+  }
+
+  .card_container {
+    flex-direction: column;
+  }
+}

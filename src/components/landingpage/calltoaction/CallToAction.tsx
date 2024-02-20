@@ -14,7 +14,7 @@ export default function CallToAction() {
     e.preventDefault();
 
     // TODO: Send email
-    console.log(email);
+    alert('Sending email to ' + email);
 
     setEmail('');
   };
@@ -74,6 +74,30 @@ export default function CallToAction() {
                     alt='Arrow'
                     width={30}
                     height={30}
+                    priority
+                  />
+                </button>
+              </form>
+            </div>
+            <div className={styles.bottom_mobile}>
+              <p className='heading_tertiary text_white text_center'>
+                GET MORE INFO IN YOUR INBOX
+              </p>
+              <form className='margin_t_25' onSubmit={handleEmailSubmit}>
+                <input
+                  type='email'
+                  value={email}
+                  className='corner_radius'
+                  placeholder='Email Address'
+                  onChange={handleEmailChange}
+                />
+                <button type='submit' className='corner_radius'>
+                  <div className='text_white'>SEND ME INFO</div>
+                  <Image
+                    src='/arrow.svg'
+                    alt='Arrow'
+                    width={22}
+                    height={22}
                     priority
                   />
                 </button>

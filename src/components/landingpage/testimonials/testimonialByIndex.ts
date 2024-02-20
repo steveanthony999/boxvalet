@@ -21,8 +21,7 @@ export const testimonials: Testimonial[] = [
     reviewerName: 'Jane Dennison',
   },
   {
-    headerQuote:
-      'They catered to my trade-show business storage needs without the hassle of a traditional storage unit.',
+    headerQuote: 'They catered to my trade-show business storage needs!',
     testimonialText:
       "I can't praise Box Valet enough for their impeccable service. They catered to my trade-show business storage needs without the hassle of a traditional storage unit. The personalized packing list for each box was a thoughtful touch, and accessing my items was just a request away. The efficiency and care they provide have made storage and retrieval a breeze. They've earned my highest recommendation!",
     avatarImage: '/avatar3.jpeg',

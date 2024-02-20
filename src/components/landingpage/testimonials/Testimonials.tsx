@@ -5,12 +5,10 @@ import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
 import { EmblaCarouselType } from 'embla-carousel';
 import { DotButton, PrevButton, NextButton } from './ArrowsAndButtons';
-// import Autoplay from 'embla-carousel-autoplay';
 import { testimonials } from './testimonialByIndex';
 import styles from './Testimonials.module.css';
 
 export default function Testimonials() {
-  //   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -61,7 +59,14 @@ export default function Testimonials() {
       />
       <div className='container'>
         <div className={styles.testimonials_container}>
-          <Image src='/quote.svg' alt='Quote' width={58} height={58} priority />
+          <Image
+            className={styles.quote_img}
+            src='/quote.svg'
+            alt='Quote'
+            width={58}
+            height={58}
+            priority
+          />
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
               {testimonials.map((testimonial, index) => (

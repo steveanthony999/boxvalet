@@ -11,11 +11,13 @@ export default function Hero() {
             <h1 className='heading_primary'>
               Store a Little. Save a Lot. It&apos;s That Simple.
             </h1>
-            <p className='margin_t_25'>
-              For when you need just a bit more space. Quick, secure,
-              <br /> and tailored to your schedule.
-            </p>
-            <div className='margin_t_51'>
+            <div className={styles.p_container}>
+              <p className='margin_t_25'>
+                For when you need just a bit more space. Quick, secure, and
+                tailored to your schedule.
+              </p>
+            </div>
+            <div className={`${styles.button_container} margin_t_51`}>
               <Link
                 href='/booking'
                 className='button button_primary corner_radius'

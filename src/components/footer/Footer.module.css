@@ -22,3 +22,18 @@
 .left {
   max-width: 365px;
 }
+
+@media (max-width: 767px) {
+  .footer_container {
+    width: 100%;
+    padding: 0 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .footer_container ul li:first-child {
+    margin-top: -1.5rem;
+  }
+}

@@ -6,6 +6,7 @@
   --pale-grey-blue: #f1f3f5;
   --dark-chocolate: #532500;
   --red-orange: #e93802;
+  --aqua-blue: #009dbc;
 }
 
 * {
@@ -141,4 +142,16 @@ a {
 
 .avatar_img {
   border-radius: 50%;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+  }
 }

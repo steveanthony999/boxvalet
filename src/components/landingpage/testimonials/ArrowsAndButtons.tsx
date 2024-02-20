@@ -24,7 +24,6 @@ export const PrevButton: React.FC<PropType> = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    // className='embla__button embla__button--prev'
     <button className={styles.carousel_button} type='button' {...restProps}>
       <Image
         src={'/prevbutton.svg'}
@@ -42,7 +41,6 @@ export const NextButton: React.FC<PropType> = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    // className='embla__button embla__button--next'
     <button className={styles.carousel_button} type='button' {...restProps}>
       <Image
         src={'/nextbutton.svg'}
