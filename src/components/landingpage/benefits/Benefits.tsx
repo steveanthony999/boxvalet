@@ -70,7 +70,7 @@ export default function Benefits() {
                 className='corner_radius'
               />
               <Image
-                src='/beneimg4.jpg'
+                src='/beneimg4.JPG'
                 alt='An artist organizing her thoughts'
                 width={251}
                 height={251}
