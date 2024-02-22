@@ -125,7 +125,7 @@ a {
 }
 
 .button {
-  padding: 17px 22px;
+  padding: 12px 22px;
   font-weight: 500;
   letter-spacing: 1px;
   border: 4px solid var(--red-orange);
@@ -143,12 +143,6 @@ a {
 
 .avatar_img {
   border-radius: 50%;
-}
-
-.no-scroll {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
 }
 
 /* Mobile */

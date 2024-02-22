@@ -1,9 +1,17 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Hamburger from './hamburger/Hamburger';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <nav className={styles.main}>
@@ -34,7 +42,12 @@ export default function Navbar() {
                 <Link href='/contactus'>CONTACT US</Link>
               </li>
               <li>
-                <Link href='/booking'>BOOK NOW</Link>
+                <Link
+                  className='button button_primary corner_radius'
+                  href='/booking'
+                >
+                  BOOK NOW
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,7 +67,45 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles.hamburger}>
-          <Hamburger />
+          <div className={styles.container} onClick={toggleMenu}>
+            <div
+              className={`${styles.bar} ${isOpen ? styles.changeBar1 : ''}`}
+            ></div>
+            <div
+              className={`${styles.bar} ${isOpen ? styles.changeBar2 : ''}`}
+            ></div>
+            <div
+              className={`${styles.bar} ${isOpen ? styles.changeBar3 : ''}`}
+            ></div>
+          </div>
+          <div
+            className={`${styles.menuOverlay} ${
+              isOpen ? styles.show : styles.hide
+            }`}
+          >
+            <ul className={styles.menuItems}>
+              <li onClick={toggleMenu}>
+                <Link href='/'>Home</Link>
+              </li>
+              <li onClick={toggleMenu}>
+                <Link href='/howitworks'>How it Works</Link>
+              </li>
+              <li onClick={toggleMenu}>
+                <Link href='/pricing'>Pricing</Link>
+              </li>
+              <li onClick={toggleMenu}>
+                <Link href='/contactus'>Contact Us</Link>
+              </li>
+              <li className={styles.signinbutton} onClick={toggleMenu}>
+                <Link
+                  className='button button_primary corner_radius'
+                  href='/signin'
+                >
+                  Sign In
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </>
