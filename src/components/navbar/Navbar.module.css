@@ -26,6 +26,8 @@
 
 .mobile_main {
   display: none;
+  position: relative;
+  z-index: 10;
 }
 
 /* Mobile */
@@ -36,9 +38,17 @@
 
   .mobile_main {
     width: 100%;
-    padding: 4px 0;
+    background: var(--white);
+    padding: 4px 39px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 10;
   }
 }

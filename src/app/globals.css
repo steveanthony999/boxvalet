@@ -7,6 +7,7 @@
   --dark-chocolate: #532500;
   --red-orange: #e93802;
   --aqua-blue: #009dbc;
+  --light-coral-red: #ff9e90;
 }
 
 * {
@@ -142,6 +143,12 @@ a {
 
 .avatar_img {
   border-radius: 50%;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 /* Mobile */
